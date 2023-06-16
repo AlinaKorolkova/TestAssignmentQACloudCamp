@@ -9,6 +9,3 @@ env/
 venv/
 
 temp/
-allure_results/
-
-behave.ini
