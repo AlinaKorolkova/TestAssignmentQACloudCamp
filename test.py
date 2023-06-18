@@ -23,5 +23,8 @@ def test_delete_post():
     assert response.status_code == 200
     assert response.json() == {}
 
+
 if __name__ == "__name__":
+    test_get_posts()
     test_create_post()
+    test_delete_post()
