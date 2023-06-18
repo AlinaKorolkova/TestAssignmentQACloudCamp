@@ -9,9 +9,10 @@ def test_get_posts():
 
 def test_create_post():
     data = {
+        "userId": 1,
+        "id": 1,
         "title": "Test",
-        "body": "Test body",
-        "userId": 1
+        "body": "Test body"
     }
     response = requests.post("https://jsonplaceholder.typicode.com/posts", json=data)
     assert response.status_code == 201
